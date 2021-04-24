@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 70%;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+
+        .header-wrapper {
+            display: flex;
+            padding: 16px 0;
+        }
+
+        .header-left {
+            width: 50%;
+        }
+
+        .header-right {
+            width: 50%;
+        }
+
+        .header-link-list {
+            list-style-type : none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header-link-item {
+            color: #77859c;
+            font-weight: 700; 
+            
+        }
+
+        .mv-image {
+            display: block;
+            width: 100%;
+        }
+        .title-midasi {
+            margin:0;
+        }
+        .midasi-wrapper {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            color: #77859c;
+        }
+        #about {
+            margin-top: 64px;
+        }
+
+        .title-desc {
+            margin: 0;
+        }
+
+        .midasi-border {
+            margin: 5px auto 0;
+            height: 3px;
+            background-color: #ccc;
+            width: 20px;
+        } 
+
+        .about-text{
+            text-align: center;  
+            font-size: 85%;   
+            color: rgb(17, 16, 16);       
+        }
+
+        .about-kodawari{
+            display: flex;
+            list-style-type : none;
+            justify-content: space-around;
+            
+        }
+
+        .about-item {
+            padding: 0 16px 0 16px;
+            width: 33.33%;
+        }
+
+        .about-image {
+            width: 100%;
+        }
+
+        .about-border{
+            margin: 5px auto 0;
+            height: 3px;
+            background-color: #ccc;
+            width: 150px;
+        }
+        #menu{
+            padding: 100px 0 120px;
+            background-color: #e8edf3;
+        }
+
+        .price{
+            float: right;
+        }
+
+        .menu-wrapper {
+            display: flex;
+        }
+
+        .menu-left {
+            width: 50%;
+            padding: 16px;
+        }
+
+        .menu-right {
+            width: 50%;
+            padding: 16px;
+        }
+
+        .inner {
+            height: 300px;
+            width: 100%;
+            background: rgb(17, 16, 16)
+        }
+
+        .menu-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 32px;
+        }
+
+        .menu-title {
+            color: white;
+            background: #77859c;
+            padding: 8px 0 8px 8px;
+            font-weight: 700;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px;
+            color: #77859c;
+            font-weight: 700;
+            border-bottom: 1px solid #77859c;
+            font-size: 12px;
+        }
+
+        .access-left {
+            border: 1px solid red;
+            height: 300px;
+        }
+
+        .access-right {
+            border: 1px solid blue;
+            height: 300px;
+        }
+
+        .access-all{
+            display: flex;
+        }
+
+        .access-left{
+            width: 70%;
+        }
+
+        .access-right{
+            width: 30%;
+
+        }
+
+        .map-image{
+            width: 100%;
+        }
+
+        .radius-test {
+            width: 50px;
+            height: 50px;
+            background: salmon;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-wrapper">
+            <div class="header-left">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="header-right">
+                <ul class="header-link-list">
+                    <li class="header-link-item"><a href="#about">ABOUT</a></li>
+                    <li class="header-link-item"><a href="#menu">MENU</a></li>
+                    <li class="header-link-item"><a href="#access">ACCESS</a></li>
+                    <li class="header-link-item"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <img class="mv-image" src="./img/mv.jpg" alt="">
+        </div>
+        <div id="about">
+            <div class="midasi-wrapper">
+                <h4 class="title-midasi">ABOUT</h4>
+                <h1 class="title-desc">カフェのこだわり</h1>
+                <div class="midasi-border"></div>   
+            </div>
+            <p class="about-text">だみーてきすとととととと</p>
+        </div>
+
+        <div class="about-kodawari">
+            <li class="about-item">
+                <img class="about-image" src="./img/about__coffee.jpg" alt="コーヒー豆">
+                <h3>豆からこだわりました</h3>
+                <div>だみーてきすと
+                <div class="about-border"></div>
+            </li>
+
+            <li class="about-item">
+                <img class="about-image" src="./img/about__pizza.jpg" alt="ピザ">
+                <h3>石窯で焼いた絶品ピザも人気</h3>
+                <div>だみーてきすと
+                <div class="about-border"></div>
+            </li>
+
+            <li class="about-item">
+                <img class="about-image" src="./img/about__cake.jpg" alt="ケーキ">
+                <h3>食後にデザートはいかが？</h3>
+                <div>   だみーてきすと 
+                <div class="about-border"></div>
+            </li>
+            
+        </div>
+        <div id="menu">
+            <div class="midasi-wrapper">
+                <h4 class="title-midasi">MENU</h4>
+                <h1 class="title-desc">メニュー</h1>
+                <div class="midasi-border"></div>
+            </div>
+
+            <div class="menu-wrapper">
+                <div class="menu-left">
+                    <ul class="menu-list">
+                        <li class="menu-title">DRINK／飲み物</li>
+                        <li class="menu-item">
+                            <span>コーヒー</span>
+                            <span>¥270</span>
+                        </li>
+                        <li class="menu-item">
+                            <span>アメリカンコーヒー</span>
+                            <span>¥290</span>
+                        </li>
+                        <li class="menu-item">
+                            <span>エスプレッソ</span>
+                            <span>¥290</span>
+                        </li>
+                        <li class="menu-item">
+                            <span>カフェラテ</span>
+                            <span>¥340</span>
+                        </li>
+                        <li class="menu-item">
+                            <span>ホットティー</span>
+                            <span>¥300</span>
+                        </li>
+                        <li class="menu-item">
+                            <span>ロイヤルミルクティー</span>
+                            <span>¥360</span>
+                        </li>
+                        <li class="menu-item">
+                            <span>ココア</span>
+                            <span>¥330</span>   
+                        </li>
+                        <li class="menu-item">
+                            <span>オレンジジュース</span>
+                            <span>¥340</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu-right">
+                    <ul class="menu-list">
+                        <li class="menu-title">FOOD／料理</li>
+                        <li class="menu-item">
+                            <span>マルゲリータ</span>
+                            <span>¥780</span>    
+                        </li>
+                        <li class="menu-item">
+                            <span>ビアンゲッティ</span>
+                            <span>¥980</span>
+                        </li>
+                        <li class="menu-item">
+                            <span>カルボナーラ</span>
+                            <span>¥780</span>
+                        </li>
+                    </ul>
+
+                    <ul class="menu-list">
+                        <li class="menu-title">DESSERT／デザート</li>
+                        <li class="menu-item">
+                            <span>ショートケーキ</span>
+                            <span>¥400</span>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <span>パンナコッタ</span>
+                            <span>¥400</span>
+                        </li>
+                        <li class="menu-item">
+                            <span>ティラミス</span>
+                            <span>¥400</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="access">
+            <div class="midasi-wrapper">
+                <h4 class="title-midasi">ABOUT</h4>
+                <h1 class="title-desc">カフェのこだわり</h1>
+                <div class="midasi-border"></div>
+            </div>
+
+            <div class="access-all" >
+                <div class="access-left">
+                    <img class="map-image" src="./img/map.png" alt="">
+                </div>
+                <div class="access-right">
+                    <div class="store-name"></div>
+                    <div class="store-address"></div>
+                    <div class="store-info"></div>
+                    <div class="store-sentence"> </div>
+                    <div class="icon">
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding: 16px;">
+            <div class="radius-test"></div>
+        </div>
+    </div>
+</body>
+</html>
