@@ -154,31 +154,52 @@
             font-size: 12px;
         }
 
-        .access-left {
-            border: 1px solid red;
-            height: 300px;
-        }
-
-        .access-right {
-            border: 1px solid blue;
-            height: 300px;
-        }
-
         .access-all{
             display: flex;
         }
 
         .access-left{
+            margin: 8px;
             width: 70%;
+            height: 350px;
         }
 
         .access-right{
+            margin: 8px;
+            list-style: none;
             width: 30%;
-
+            height: 350px;
         }
 
         .map-image{
             width: 100%;
+        }
+
+        .store-name{
+            padding: 6px 0 6px 0;
+            color: rgb(58, 56, 56);
+            font-weight: 700;
+            font-size: 18px;
+            border-bottom: 3px solid #77859c;
+        }
+
+        .store-address{
+            padding: 6px 0 6px 0;
+            color: rgb(46, 44, 44);
+            font-size: small;
+        }
+
+        .store-info{
+            padding: 6px 0 6px 0;
+            color: rgb(46, 44, 44);
+            background: rgb(197, 201, 201);
+            font-size: small;
+        }
+
+        .store-sentence{
+            padding: 6px 0 6px 0;
+            color: rgb(46, 44, 44);
+            font-size: small;
         }
 
         .radius-test {
@@ -186,6 +207,28 @@
             height: 50px;
             background: salmon;
             border-radius: 50%;
+        }
+        .icon{
+            padding: 6px 0 0px 0;
+            display: flex ;
+            width: 125px;
+            justify-content: space-between;
+        }
+            
+
+        .icon-item{
+            width: 50px;
+            height: 50px;
+            background: cadetblue;
+            border-radius: 50%;     
+        }
+
+        .twitter{
+            padding: 9.5px 0 7.5px 7.5px;
+        }
+
+        .mail{
+            padding: 10px 11px 0px 8px;
         }
 
     </style>
@@ -335,20 +378,29 @@
                     <img class="map-image" src="./img/map.png" alt="">
                 </div>
                 <div class="access-right">
-                    <div class="store-name"></div>
-                    <div class="store-address"></div>
-                    <div class="store-info"></div>
-                    <div class="store-sentence"> </div>
+                    <div class="store-name">
+                        <li>みみぺんカフェ</li>
+                    </div>
+                    <div class="store-address">
+                        <li>&#12306;100-8111</li>
+                        <li>東京都千代田区千代田1-1</li>
+                        <li>TEL : 000-0000-0000</li>
+                    </div>
+                    <div class="store-info">
+                        <li>営業時間 : 10:00～17:30</li>
+                        <li>定休日 : 毎週月曜</li>
+                        <li>駐車場 : 10台</li>
+                    </div>
+                    <div class="store-sentence"> 
+                        <li>スタッフ一同お客様のご来店を心よりお待ちしております。</li>
+                        <li>お気軽にお立ち寄りください。</li>
+                    </div>
                     <div class="icon">
-                        <li>test<img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
+                        <div class="icon-item"><img class="twitter" src="./img/icon__twitter.png" alt=""></div>
+                        <div class="icon-item"><img class="mail" src="./img/icon__mail.png" alt=""></div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div style="padding: 16px;">
-            <div class="radius-test"></div>
         </div>
     </div>
 </body>
