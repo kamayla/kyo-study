@@ -18,11 +18,16 @@
             width: 70%;
             margin: 0 auto;
             min-height: 100vh;
+            padding-top: 100px;
         }
 
         .header-wrapper {
             display: flex;
             padding: 16px 0;
+            position: fixed;
+            width: 100%;
+            background:rgb(243, 243, 243);
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
         }
 
         .header-left {
@@ -59,7 +64,8 @@
             color: #77859c;
         }
         #about {
-            margin-top: 64px;
+            margin-top:-100px;
+            padding-top:148px;
         }
 
         .title-desc {
@@ -101,8 +107,15 @@
             background-color: #ccc;
             width: 150px;
         }
+
         #menu{
-            padding: 100px 0 120px;
+            margin-top:-145px;
+            padding-top:145px;
+        }
+
+        .menu-parent {
+            margin-top: 48px;
+            padding: 50px 0 60px;
             background-color: #e8edf3;
         }
 
@@ -154,6 +167,9 @@
             font-size: 12px;
         }
 
+        #access{
+            margin-top: 48px;
+        }
         .access-all{
             display: flex;
         }
@@ -172,7 +188,7 @@
         }
 
         .map-image{
-            width: 100%;
+            width: 400px;
         }
 
         .store-name{
@@ -217,37 +233,98 @@
             
 
         .icon-item{
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             background: cadetblue;
-            border-radius: 50%;     
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .twitter{
-            padding: 9.5px 0 7.5px 7.5px;
+            
         }
 
         .mail{
-            padding: 10px 11px 0px 8px;
+        }
+
+        @media (max-width: 780px) {
+        /* 横幅が320px以下の場合に適用するスタイル */
+            .about-kodawari{
+                display: flex;
+                list-style-type : none;
+                justify-content: space-around;
+                flex-flow: column;
+            }
+
+            .about-item {
+                padding: 0;
+                width: 100%;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                margin-bottom: 16px;
+            }
+
+            .about-image {
+                width: 100%;
+            }
+
+            .about-border{
+                display: none;
+            }
+
+            .access-all{
+                display: flex;
+                flex-flow: column;
+            }
+            .access-left{
+                margin: 8px;
+                width: 100%;
+                height: 350px;
+            }
+
+            .access-right{
+                margin: 8px;
+                list-style: none;
+                width: 100%;
+                height: 350px;
+            }
+
+            .map-image{
+                width: 100%;
+            }
+
+            .store-name{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            padding: 6px 0 6px 0;
+            color: rgb(58, 56, 56);
+            font-weight: 700;
+            font-size: 18px;
+            border-bottom: 3px solid #77859c;
+        }
         }
 
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header-wrapper">
-            <div class="header-left">
-                <img src="./img/logo.png" alt="">
-            </div>
-            <div class="header-right">
-                <ul class="header-link-list">
-                    <li class="header-link-item"><a href="#about">ABOUT</a></li>
-                    <li class="header-link-item"><a href="#menu">MENU</a></li>
-                    <li class="header-link-item"><a href="#access">ACCESS</a></li>
-                    <li class="header-link-item"><a href="#contact">CONTACT</a></li>
-                </ul>
-            </div>
+    <div class="header-wrapper">
+        <div class="header-left">
+            <img src="./img/logo.png" alt="">
         </div>
+        <div class="header-right">
+            <ul class="header-link-list">
+                <li class="header-link-item"><a href="#about">ABOUT</a></li>
+                <li class="header-link-item"><a href="#menu">MENU</a></li>
+                <li class="header-link-item"><a href="#access">ACCESS</a></li>
+                <li class="header-link-item"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
         <div>
             <img class="mv-image" src="./img/mv.jpg" alt="">
         </div>
@@ -258,117 +335,118 @@
                 <div class="midasi-border"></div>   
             </div>
             <p class="about-text">だみーてきすとととととと</p>
-        </div>
-
-        <div class="about-kodawari">
-            <li class="about-item">
-                <img class="about-image" src="./img/about__coffee.jpg" alt="コーヒー豆">
-                <h3>豆からこだわりました</h3>
-                <div>だみーてきすと
-                <div class="about-border"></div>
-            </li>
-
-            <li class="about-item">
-                <img class="about-image" src="./img/about__pizza.jpg" alt="ピザ">
-                <h3>石窯で焼いた絶品ピザも人気</h3>
-                <div>だみーてきすと
-                <div class="about-border"></div>
-            </li>
-
-            <li class="about-item">
-                <img class="about-image" src="./img/about__cake.jpg" alt="ケーキ">
-                <h3>食後にデザートはいかが？</h3>
-                <div>   だみーてきすと 
-                <div class="about-border"></div>
-            </li>
-            
+            <div class="about-kodawari">
+                <li class="about-item">
+                    <img class="about-image" src="./img/about__coffee.jpg" alt="コーヒー豆">
+                    <h3>豆からこだわりました</h3>
+                    <div>だみーてきすと
+                    <div class="about-border"></div>
+                </li>
+    
+                <li class="about-item">
+                    <img class="about-image" src="./img/about__pizza.jpg" alt="ピザ">
+                    <h3>石窯で焼いた絶品ピザも人気</h3>
+                    <div>だみーてきすと
+                    <div class="about-border"></div>
+                </li>
+    
+                <li class="about-item">
+                    <img class="about-image" src="./img/about__cake.jpg" alt="ケーキ">
+                    <h3>食後にデザートはいかが？</h3>
+                    <div>   だみーてきすと 
+                    <div class="about-border"></div>
+                </li>
+                
+            </div>
         </div>
         <div id="menu">
-            <div class="midasi-wrapper">
-                <h4 class="title-midasi">MENU</h4>
-                <h1 class="title-desc">メニュー</h1>
-                <div class="midasi-border"></div>
-            </div>
-
-            <div class="menu-wrapper">
-                <div class="menu-left">
-                    <ul class="menu-list">
-                        <li class="menu-title">DRINK／飲み物</li>
-                        <li class="menu-item">
-                            <span>コーヒー</span>
-                            <span>¥270</span>
-                        </li>
-                        <li class="menu-item">
-                            <span>アメリカンコーヒー</span>
-                            <span>¥290</span>
-                        </li>
-                        <li class="menu-item">
-                            <span>エスプレッソ</span>
-                            <span>¥290</span>
-                        </li>
-                        <li class="menu-item">
-                            <span>カフェラテ</span>
-                            <span>¥340</span>
-                        </li>
-                        <li class="menu-item">
-                            <span>ホットティー</span>
-                            <span>¥300</span>
-                        </li>
-                        <li class="menu-item">
-                            <span>ロイヤルミルクティー</span>
-                            <span>¥360</span>
-                        </li>
-                        <li class="menu-item">
-                            <span>ココア</span>
-                            <span>¥330</span>   
-                        </li>
-                        <li class="menu-item">
-                            <span>オレンジジュース</span>
-                            <span>¥340</span>
-                        </li>
-                    </ul>
+            <div class="menu-parent">
+                <div class="midasi-wrapper">
+                    <h4 class="title-midasi">MENU</h4>
+                    <h1 class="title-desc">メニュー</h1>
+                    <div class="midasi-border"></div>
                 </div>
-
-                <div class="menu-right">
-                    <ul class="menu-list">
-                        <li class="menu-title">FOOD／料理</li>
-                        <li class="menu-item">
-                            <span>マルゲリータ</span>
-                            <span>¥780</span>    
-                        </li>
-                        <li class="menu-item">
-                            <span>ビアンゲッティ</span>
-                            <span>¥980</span>
-                        </li>
-                        <li class="menu-item">
-                            <span>カルボナーラ</span>
-                            <span>¥780</span>
-                        </li>
-                    </ul>
-
-                    <ul class="menu-list">
-                        <li class="menu-title">DESSERT／デザート</li>
-                        <li class="menu-item">
-                            <span>ショートケーキ</span>
-                            <span>¥400</span>
-                        </li>
-                        
-                        <li class="menu-item">
-                            <span>パンナコッタ</span>
-                            <span>¥400</span>
-                        </li>
-                        <li class="menu-item">
-                            <span>ティラミス</span>
-                            <span>¥400</span>
-                        </li>
-                    </ul>
+    
+                <div class="menu-wrapper">
+                    <div class="menu-left">
+                        <ul class="menu-list">
+                            <li class="menu-title">DRINK／飲み物</li>
+                            <li class="menu-item">
+                                <span>コーヒー</span>
+                                <span>¥270</span>
+                            </li>
+                            <li class="menu-item">
+                                <span>アメリカンコーヒー</span>
+                                <span>¥290</span>
+                            </li>
+                            <li class="menu-item">
+                                <span>エスプレッソ</span>
+                                <span>¥290</span>
+                            </li>
+                            <li class="menu-item">
+                                <span>カフェラテ</span>
+                                <span>¥340</span>
+                            </li>
+                            <li class="menu-item">
+                                <span>ホットティー</span>
+                                <span>¥300</span>
+                            </li>
+                            <li class="menu-item">
+                                <span>ロイヤルミルクティー</span>
+                                <span>¥360</span>
+                            </li>
+                            <li class="menu-item">
+                                <span>ココア</span>
+                                <span>¥330</span>   
+                            </li>
+                            <li class="menu-item">
+                                <span>オレンジジュース</span>
+                                <span>¥340</span>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="menu-right">
+                        <ul class="menu-list">
+                            <li class="menu-title">FOOD／料理</li>
+                            <li class="menu-item">
+                                <span>マルゲリータ</span>
+                                <span>¥780</span>    
+                            </li>
+                            <li class="menu-item">
+                                <span>ビアンゲッティ</span>
+                                <span>¥980</span>
+                            </li>
+                            <li class="menu-item">
+                                <span>カルボナーラ</span>
+                                <span>¥780</span>
+                            </li>
+                        </ul>
+    
+                        <ul class="menu-list">
+                            <li class="menu-title">DESSERT／デザート</li>
+                            <li class="menu-item">
+                                <span>ショートケーキ</span>
+                                <span>¥400</span>
+                            </li>
+                            
+                            <li class="menu-item">
+                                <span>パンナコッタ</span>
+                                <span>¥400</span>
+                            </li>
+                            <li class="menu-item">
+                                <span>ティラミス</span>
+                                <span>¥400</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div id="access">
             <div class="midasi-wrapper">
-                <h4 class="title-midasi">ABOUT</h4>
+                <h4 class="title-midasi">ACCESS</h4>
                 <h1 class="title-desc">カフェのこだわり</h1>
                 <div class="midasi-border"></div>
             </div>
@@ -396,8 +474,12 @@
                         <li>お気軽にお立ち寄りください。</li>
                     </div>
                     <div class="icon">
-                        <div class="icon-item"><img class="twitter" src="./img/icon__twitter.png" alt=""></div>
-                        <div class="icon-item"><img class="mail" src="./img/icon__mail.png" alt=""></div>
+                        <div class="icon-item">
+                            <img class="twitter" src="./img/icon__twitter.png" alt="">
+                        </div>
+                        <div class="icon-item">
+                            <img class="mail" src="./img/icon__mail.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
