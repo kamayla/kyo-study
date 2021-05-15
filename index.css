@@ -1,0 +1,350 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.header-wrapper {
+    display: flex;
+    padding: 16px 0;
+    position: fixed;
+    width: 100%;
+    background:rgb(243, 243, 243);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.header-left {
+    width: 50%;
+}
+
+.header-right {
+    width: 50%;
+}
+
+.header-link-list {
+    list-style-type : none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-link-item {
+    color: #77859c;
+    font-weight: 700; 
+    
+}
+
+.mv-image {
+    display: block;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+.title-midasi {
+    margin:0;
+}
+.midasi-wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: #77859c;
+}
+#about {
+    padding: 50px 0;
+
+}
+
+.title-desc {
+    margin: 0;
+}
+
+.midasi-border {
+    margin: 5px auto 0;
+    height: 3px;
+    background-color: #ccc;
+    width: 20px;
+} 
+
+.about-text{
+    text-align: center;  
+    font-size: 85%;   
+    color: rgb(17, 16, 16);       
+}
+
+.about-kodawari{
+    display: flex;
+    list-style-type : none;
+    justify-content: space-around;
+    
+    
+}
+
+#about-item {
+    padding: 0 16px 0 16px;
+    width: 33.33%;
+}
+
+.about-image {
+    display: none;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.about-border{
+    margin: 5px auto 0;
+    height: 3px;
+    background-color: #ccc;
+    width: 150px;
+}
+
+#menu{
+
+}
+
+.menu-parent {
+    padding: 50px 0 60px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background-color: #e8edf3;
+}
+
+.price{
+    float: right;
+}
+
+.menu-wrapper {
+    display: flex;
+    
+}
+
+.menu-left {
+    width: 50%;
+    padding: 16px;
+}
+
+.menu-right {
+    width: 50%;
+    padding: 16px;
+}
+
+.inner {
+    height: 300px;
+    width: 100%;
+    background: rgb(17, 16, 16)
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.menu-title {
+    color: white;
+    background: #77859c;
+    padding: 8px 0 8px 8px;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    color: #77859c;
+    font-weight: 700;
+    border-bottom: 1px solid #77859c;
+    font-size: 12px;
+}
+
+#access{
+    padding: 50px 0;
+    margin-bottom: 250px;
+}
+.access-all{
+    display: flex;
+}
+
+.access-left{
+    margin: 8px;
+    width: 60%;
+    height: 350px;
+}
+
+.access-right{
+    margin: 8px;
+    list-style: none;
+    width: 40%;
+    height: 350px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #e8edf3;
+    padding: 0 20px 0 20px;
+}
+
+.map-image{
+    width: 400px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+
+.store-name{
+    padding: 6px 0 6px 0;
+    color: rgb(58, 56, 56);
+    font-weight: 700;
+    font-size: 18px;
+    border-bottom: 3px solid #77859c;
+}
+
+.store-address{
+    padding: 6px 0 6px 0;
+    color: rgb(46, 44, 44);
+    font-size: small;
+}
+
+.store-info{
+    padding: 6px 0 6px 0;
+    color: rgb(46, 44, 44);
+    background: rgb(197, 201, 201);
+    font-size: small;
+}
+
+.store-sentence{
+    padding: 6px 0 6px 0;
+    color: rgb(46, 44, 44);
+    font-size: small;
+}
+
+.radius-test {
+    width: 50px;
+    height: 50px;
+    background: salmon;
+    border-radius: 50%;
+}
+.icon{
+    padding: 6px 0 0px 0;
+    display: flex ;
+    width: 125px;
+    justify-content: space-between;
+}
+    
+
+.icon-item{
+    width: 60px;
+    height: 60px;
+    background: cadetblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    outline: none;
+}
+
+.twitter{
+    
+}
+
+.mail{
+}
+
+@media (max-width: 780px) {
+/* 横幅が320px以下の場合に適用するスタイル */
+    .menu-wrapper {
+        display: flex;
+        list-style-type : none;
+        justify-content: space-around;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .menu-left {
+        width: 80%;
+        padding: 16px;
+        
+    }
+
+    .menu-right {
+        width: 80%;
+        padding: 0px;
+    }
+    
+    .about-kodawari{
+        display: flex;
+        list-style-type : none;
+        justify-content: space-around;
+        flex-flow: column;
+    }
+
+    .about-item {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-border{
+        display: none;
+    }
+
+    .access-all{
+        display: flex;
+        flex-flow: column;
+    }
+    .access-left{
+        margin: 8px;
+        width: 100%;
+        height: 350px;
+    }
+
+    .access-right{
+        margin: 8px;
+        list-style: none;
+        width: 100%;
+        height: 350px;
+    }
+
+    .map-image{
+        width: 100%;
+    }
+
+    .store-name{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 6px 0 6px 0;
+    color: rgb(58, 56, 56);
+    font-weight: 700;
+    font-size: 18px;
+    border-bottom: 3px solid #77859c;
+    }
+
+    .icon{
+    padding: 6px 0 0px 0;
+    display: flex ;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+    }
+
+
+    
+}
